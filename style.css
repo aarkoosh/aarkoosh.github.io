@@ -453,6 +453,10 @@ dialog {
   padding: 0;
 }
 
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+
 /*Slideshow*/
 .slideshow-container {
   position: relative;
