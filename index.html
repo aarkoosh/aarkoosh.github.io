@@ -92,7 +92,7 @@
       <p class="gallery-p-article-sub">AXA&reg;</p>
     </div>
   </div>
-  <dialog id="modal1">
+  <dialog id="modal1" class="modal">
     <div class="modal-header">
       <h2>Modal 1</h2>
       <button data-close="modal1">Close</button>
@@ -110,7 +110,7 @@
       <button data-close="modal1">Close</button>
     </div>
   </dialog>
-  <dialog id="modal2">
+  <dialog id="modal2" class="modal">
     <div class="modal-header">
       <h2>Modal 2</h2>
       <button data-close="modal2">Close</button>
@@ -124,7 +124,7 @@
       <button data-close="modal2">Close</button>
     </div>
   </dialog>
-  <dialog id="modal3">
+  <dialog id="modal3" class="modal">
     <div class="modal-header">
       <h2>Modal 3</h2>
       <button data-close="modal3">Close</button>
@@ -138,7 +138,7 @@
       <button data-close="modal3">Close</button>
     </div>
   </dialog>
-  <dialog id="modal4">
+  <dialog id="modal4" class="modal">
     <div class="modal-header">
       <h2>Modal 4</h2>
       <button data-close="modal4">Close</button>
@@ -152,7 +152,7 @@
       <button data-close="modal4">Close</button>
     </div>
   </dialog>
-  <dialog id="modal5">
+  <dialog id="modal5" class="modal">
     <div class="modal-header">
       <h2>Modal 5</h2>
       <button data-close="modal5">Close</button>
@@ -166,7 +166,7 @@
       <button data-close="modal5">Close</button>
     </div>
   </dialog>
-  <dialog id="modal6">
+  <dialog id="modal6" class="modal">
     <div class="modal-header">
       <h2>Modal 6</h2>
       <button data-close="modal6">Close</button>
@@ -194,7 +194,7 @@
       <button data-close="modal6">Close</button>
     </div>
   </dialog>
-   <dialog id="modal8">
+   <dialog id="modal8" class="modal">
     <div class="modal-header">
       <h2>Modal 6</h2>
       <button data-close="modal6">Close</button>
@@ -208,7 +208,7 @@
       <button data-close="modal6">Close</button>
     </div>
   </dialog>
-   <dialog id="modal9">
+   <dialog id="modal9" class="modal">
     <div class="modal-header">
       <h2>Modal 6</h2>
       <button data-close="modal6">Close</button>
@@ -235,13 +235,16 @@
     </div>
   </footer>
   <script>
-  const galleryArticles = document.querySelectorAll('.gallery-article');
-  galleryArticles.forEach((article, index) => {
-    article.addEventListener('click', (e) => {
-      e.preventDefault();
-      document.getElementById(`modal-${index + 1}`).showModal();
+    document.querySelectorAll('dialog.modal').forEach(modal => {
+      modal.addEventListener('click', (e) => {
+        const rect = modal.getBoundingClientRect();
+        const clickedOutside = (
+          e.clientY < rect.top || e.clientY > rect.bottom ||
+          e.clientX < rect.left || e.clientX > rect.right
+        );
+        if (clickedOutside) modal.close();
+      });
     });
-  });
   </script>
 </body>
 </html>
