@@ -86,6 +86,10 @@ body {
   overscroll-behavior: none;
 }
 
+body:has(dialog[open]) {
+  overflow: hidden;
+}
+
 img,
 embed,
 object,
