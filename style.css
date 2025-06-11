@@ -420,29 +420,6 @@ footer {
 }
 
 /*Modal*/
-.modal-header,
-.modal-footer {
-  background: white;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  z-index: 1;
-}
-
-.modal-body {
-  max-height: 70vh;
-  overflow-y: auto;
-  padding: var(--size-rem-s);
-}
-
-.modal-content {
-  display: flex;
-  flex-direction: column;
-  gap: var(--size-rem-s);
-}
-
 .modal-image {
   width: 100%;
   height: auto;
@@ -454,6 +431,14 @@ footer {
   box-sizing: border-box;
 }
 
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+dialog.modal:not([open]) {
+  display: none;
+}
+
 dialog.modal {
   display: flex;
   flex-direction: column;
@@ -463,14 +448,46 @@ dialog.modal {
   margin: auto;
   border: none;
   padding: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.modal-header,
+.modal-footer {
+  background: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  z-index: 1;
+}
+
+.modal-header {
+  top: 0;
+}
+
+.modal-footer {
+  bottom: 0;
+  justify-content: flex-end;
+}
+
+.modal-body {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.modal-content {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.modal-title {
+  margin: 0;
+  font-size: 1.25rem;
 }
 
 dialog::backdrop {
   background: rgba(0, 0, 0, 0.6);
-}
-
-dialog.modal:not([open]) {
-  display: none;
 }
 
 /*Slideshow*/
