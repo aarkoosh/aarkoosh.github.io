@@ -436,7 +436,7 @@ footer {
 }
 
 dialog::backdrop {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 dialog.modal:not([open]) {
