@@ -520,7 +520,7 @@ dialog::backdrop {
   box-sizing: border-box;
   background-color: #eeeeee;
   color: #343a40;
-  padding-left: .3rem;
+  padding-left: .5rem;
   padding-right: .5rem;
   padding-top: .3rem;
   padding-bottom: .3rem;
