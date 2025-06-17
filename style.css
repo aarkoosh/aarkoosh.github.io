@@ -529,11 +529,7 @@ dialog::backdrop {
   font-weight: 500;
   text-align: center;
   border-radius: 5px;
-}
-
-.badge-icon {
-  padding: .2rem;
-  color: #9e9e9e;
+  border-left: 5px solid #2d66c2;
 }
 
 /*Slideshow*/
