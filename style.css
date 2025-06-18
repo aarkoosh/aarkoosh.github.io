@@ -495,7 +495,7 @@ dialog.modal {
   line-height: var(--font-lineheight);
 }
 
-.modal-button-desktop {
+.modal-close-button {
   border: var(--border-black);
   border-radius: var(--border-radius);
   font-family: var(--font-family-main);
