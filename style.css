@@ -458,7 +458,7 @@ dialog.modal {
 .modal-header,
 .modal-footer {
   background: white;
-  padding: 1rem;
+  padding: 1.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -481,8 +481,8 @@ dialog.modal {
 }
 
 .modal-content {
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 3.25rem;
+  padding-right: 3.25rem;
 }
 
 .modal-title {
@@ -491,22 +491,20 @@ dialog.modal {
   font-family: var(--font-family-main);
   font-weight: var(--font-weight-l);
   font-size: var(--font-size-m);
-  color: var(--color-black);
+  color: #000000;
   line-height: var(--font-lineheight);
 }
 
 .modal-close-button {
-  border: var(--border-black);
-  border-radius: var(--border-radius);
-  font-family: var(--font-family-main);
-  font-size: var(--font-size-s);
-  font-weight: var(--font-weight-m);
-  background-color: var(--color-white);
-  color: var(--color-black);
+  border: #000000;
+  border-radius: 100px;
+  background-color: #ffffff;
+  color: #000000;
+  padding: .5rem .65rem;
 }
 
 dialog::backdrop {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.85);
 }
 
 /*Badges*/
