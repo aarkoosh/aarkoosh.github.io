@@ -490,7 +490,7 @@ dialog.modal {
   text-decoration: none;
   font-family: var(--font-family-main);
   font-weight: var(--font-weight-l);
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-m);
   color: var(--color-black);
   line-height: var(--font-lineheight);
 }
