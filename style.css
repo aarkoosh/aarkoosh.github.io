@@ -176,7 +176,7 @@ nav {
 
 .nav-menu-container {
   display: flex;
-  gap: var(--size-rem-s);
+  gap: .75rem;
 }
 
 .hero-text-block-container {
@@ -424,30 +424,11 @@ footer {
 }
 
 /*Modal*/
-.modal-image {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  display: block;
-  margin: 2rem auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  box-sizing: border-box;
-}
-
-dialog::backdrop {
-  background: rgba(0, 0, 0, 0.9);
-}
-
-dialog.modal:not([open]) {
-  display: none;
-}
-
 dialog.modal {
   display: flex;
   flex-direction: column;
   width: 80%;
-  max-width: 800px;
+  max-width: 1000px;
   height: 80vh;
   margin: auto;
   border: none;
@@ -458,7 +439,7 @@ dialog.modal {
 .modal-header,
 .modal-footer {
   background: white;
-  padding: 1.25rem;
+  padding: 1.25rem 1.75rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -478,6 +459,7 @@ dialog.modal {
 .modal-body {
   flex: 1;
   overflow-y: auto;
+  padding-top: .15rem;
 }
 
 .modal-content {
@@ -503,8 +485,27 @@ dialog.modal {
   padding: .5rem .65rem;
 }
 
+.modal-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 2rem auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+
 dialog::backdrop {
   background: rgba(0, 0, 0, 0.85);
+}
+
+dialog.modal:not([open]) {
+  display: none;
+}
+
+body:has(dialog[open]) {
+  overflow: hidden;
 }
 
 /*Badges*/
