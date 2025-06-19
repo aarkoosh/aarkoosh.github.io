@@ -1,25 +1,6 @@
 :root {
- /*Size Rem*/
-  --size-rem-xxs: .25em;
-  --size-rem-xs: .5rem;
-  --size-rem-s: 1rem;
-  --size-rem-m: 2.5rem;
-  --size-rem-l: 5rem;
-  --size-rem-xl: 7.5rem;
-  --size-rem-xxl: 10rem;
-
-  /*Size Width*/
-  --size-width-full: 100%;
-  --size-width-1col: 70%;
-  --size-width-2col: 35%;
-  --size-width-3col: 20%;
-  --size-width-4col: 15%;
-
-  /*Styles*/
   --font-family-main: "Pathway Extreme";
   --border-radius: 100px;
-
-  /*Colors*/
   --color-blue: #3c78d8;
   --color-green: #31f5a5;
   --color-grey: #696969;
@@ -314,14 +295,14 @@ footer {
   flex: 1 1 calc(33.33% - 1rem);
   max-width: calc(33.33% - 1rem);
   box-sizing: border-box;
-  border: 1.5px solid #ffffff;
+  border: 1.5px solid var(--color-white);
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: var(--color-white);
 }
 
 .gallery-article:hover {
-  background-color: #f7f7f7;
-  border: 1.5px solid #eeeeee;
+  background-color: var(--color-grey-light);
+  border: 1.5px solid var(--color-grey-light);
 }
 
 .article-title {
@@ -336,7 +317,7 @@ footer {
   font-size: .75em;
   line-height: 1.2em;
   font-weight: 500;
-  color: #696969;
+  color: var(--color-grey-dark);
   margin-top: .5rem;
   margin-bottom: 1rem;
   padding-left: .5rem;
@@ -502,15 +483,15 @@ body:has(dialog[open]) {
 .slideshow-button-right {
   border-radius: 0;
   padding: .5rem 1rem;
-  color: #ffffff;
+  color: var(--color-white);
   background-color: rgba(0, 0, 0, 0.7);
   font-size: 1em;
-  border-right: 1px solid #696969;
+  border-right: 1px solid var(--color-grey-light);
 }
 
 .slideshow-button-left:hover,
 .slideshow-button-right:hover {
-  background-color: #000000;
+  background-color: var(--color-black);
 }
 
 /*Brands*/
