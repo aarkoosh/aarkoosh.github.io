@@ -394,7 +394,7 @@ dialog.modal {
   background-color: var(--color-white);
   color: var(--color-black);
   cursor: pointer;
-  padding: .7rem .9rem;
+  padding: .7rem 1.1rem;
 }
 
 .modal-image {
