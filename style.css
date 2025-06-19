@@ -384,7 +384,7 @@ dialog.modal {
   text-decoration: none;
   font-family: var(--font-family-main);
   font-weight: 700;
-  font-size: 1em;
+  font-size: 1.25em;
   color: var(--color-black);
   line-height: 1.2em;
 }
