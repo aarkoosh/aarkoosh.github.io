@@ -3,6 +3,7 @@
   --border-radius: 100px;
   --color-blue: #3c78d8;
   --color-green: #31f5a5;
+  --color-gold: #ffc800;
   --color-grey: #696969;
   --color-grey-light: #f7f7f7;
   --color-grey-dark: #eeeeee;
@@ -34,10 +35,10 @@ p,
 a {
   text-decoration: none;
   font-family: var(--font-family-main);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1em;
   color: var(--color-black);
-  line-height: 1.2em;
+  line-height: 1.4em;
   padding: 0;
   margin: 0;
 }
@@ -53,6 +54,11 @@ button {
   font-family: var(--font-family-main);
   font-weight: 700;
   cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 /*Header*/
@@ -116,7 +122,7 @@ nav {
   gap: 2rem;
   justify-content: space-between;
   padding-top: 10rem;
-  padding-bottom: 5rem;
+  padding-bottom: 4.5rem;
   padding-left: 10rem;
   padding-right: 10rem;
 }
@@ -147,7 +153,7 @@ nav {
 .nav-button-desktop-circle:hover p,
 .nav-button-mobile-circle:hover p,
 .nav-button-desktop-circle:hover a,
-.nav-button-mobile-circle:hover a, {
+.nav-button-mobile-circle:hover a {
   color: var(--color-white);
 }
 
@@ -170,6 +176,8 @@ nav {
 footer {
   background-color: var(--color-grey-light);
   width: 100%;
+  height: 13vh;
+  bottom: 0;
 }
 
 .footer-container {
@@ -303,7 +311,12 @@ footer {
   padding-bottom: 2rem;
 }
 
-.text-article-container {
+.text-container a:hover {
+  text-decoration: underline;
+}
+
+.text-article-container,
+.text-article-container-wide {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -318,10 +331,15 @@ footer {
   flex-basis: 100%;
   flex: 1;
   gap: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 hr {
-  margin: 1.5rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .text-p-sm-center {
@@ -358,11 +376,14 @@ hr {
   border: 1.5px solid var(--color-white);
   overflow: hidden;
   background-color: var(--color-white);
+  border-radius: 0;
+  transition: border-radius 1s ease-in-out, border-color 1s ease-in-out, background-color 1s ease-in-out;
 }
 
 .gallery-article:hover {
   background-color: var(--color-grey-light);
   border: 1.5px solid var(--color-grey-dark);
+  border-radius: 5px;
 }
 
 .article-title-container {
@@ -388,14 +409,20 @@ hr {
 
 .article-img-container {
   overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
 .gallery-article img {
-  transition: all 2s ease-in-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: all 10s ease-in-out;
 }
 
-.gallery-article img:hover {
-  transform: scale(1.05);
+.gallery-article:hover img {
+  transform: scale(1.08);
 }
 
 /*Modal*/
@@ -409,6 +436,7 @@ dialog.modal {
   border: none;
   padding: 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
 }
 
 .modal-header,
@@ -460,7 +488,7 @@ dialog.modal {
   background-color: var(--color-white);
   color: var(--color-black);
   cursor: pointer;
-  padding: .7rem 1.1rem;
+  padding: .7rem 1.2rem;
 }
 
 .modal-image {
@@ -468,9 +496,6 @@ dialog.modal {
   height: auto;
   max-width: 100%;
   display: block;
-  margin: 2rem auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
   box-sizing: border-box;
 }
 
@@ -511,9 +536,26 @@ body:has(dialog[open]) {
   border-left: 5px solid var(--color-blue);
 }
 
+.badge-gold {
+  box-sizing: border-box;
+  background-color: var(--color-grey-light);
+  color: var(--color-black);
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+  font-family: var(--font-family-main);
+  font-size: .8em;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 5px;
+  border-left: 5px solid var(--color-gold);
+}
+
 /*Slideshow*/
 .slideshow-container {
   position: relative;
+  border: 1px solid var(--color-grey-dark);
 }
 
 .slideshow-info-container {
@@ -523,7 +565,7 @@ body:has(dialog[open]) {
 }
 
 .slideshow-img-container {
-  display: none;
+  display: none;  
 }
 
 .slideshow-img {
@@ -701,7 +743,7 @@ body:has(dialog[open]) {
 }
 
 /*Tablet*/
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1250px) {
   .contentimghalfleft {
     max-width: 70%;
     padding-left: 2.5rem;
@@ -712,6 +754,10 @@ body:has(dialog[open]) {
     max-width: 70%;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .gallery {
+    gap: .7rem;
   }
 
   .gallery-article {
@@ -728,8 +774,12 @@ body:has(dialog[open]) {
   .brands-container,
   .text-block-container,
   .gallery-container {
-    padding-left: 7.5rem;
-    padding-right: 7.5rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .hero-text-block-container {
+    padding-bottom: 3rem;
   }
 
   .nav-button-desktop-circle {
@@ -738,6 +788,17 @@ body:has(dialog[open]) {
 
   .nav-button-mobile-circle {
     display: block;
+  }
+
+  .text-article-container-wide {
+    display: inline-block;
+  }
+
+  .text-article-container-wide hr {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 }
 
@@ -763,6 +824,10 @@ body:has(dialog[open]) {
     max-width: 70%;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .gallery {
+    padding: 0 10%;
   }
 
   .gallery-article {
@@ -791,11 +856,15 @@ body:has(dialog[open]) {
     display: inline-block;
   }
 
-  hr {
-    margin: 3rem;
-  }
-
   .banner-p {
     display: none;
+  }
+
+
+  hr {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 }
