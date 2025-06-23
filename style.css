@@ -16,6 +16,7 @@ body {
   margin: 0;
   padding: 0;
   overscroll-behavior: none;
+  overflow-x: hidden;
 }
 
 body:has(dialog[open]) {
@@ -236,11 +237,11 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   padding-left: 5rem;
   padding-right: 5rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .text-container {
@@ -280,8 +281,6 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 3rem;
-  padding-top: 2%;
-  padding-bottom: 2%;
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -564,6 +563,15 @@ body:has(dialog[open]) {
 }
 
 @media only screen and (max-width: 800px) {
+  main {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  nav {
+    padding: .5rem 5%;
+  }
+
   .gallery {
     grid-template-columns: 1fr;
   }
@@ -582,5 +590,21 @@ body:has(dialog[open]) {
 
   .text-article-container {
     grid-template-columns: 1fr;
+  }
+
+  .slideshow-container {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .modal-header,
+  .modal-footer {
+    padding-left: 2rem;
+    padding-right: 1.4rem;
+  }
+
+  .modal-body {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
