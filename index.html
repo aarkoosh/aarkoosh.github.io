@@ -6,284 +6,309 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alex's Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
-    <div class="header-container">
-      <div class="banner-container">
-        <p class="banner-p">Looking&nbsp;for&nbsp;a&nbsp;product&nbsp;designer?</p>
-        <a href="https://www.linkedin.com/in/aarkoosh">
-          <p class="banner-a">Let's&nbsp;connect</p>
-        </a>
+    <div class="banner">
+      <p>Looking&nbsp;for&nbsp;a&nbsp;product&nbsp;designer?</p>
+      <a href="https://www.linkedin.com/in/aarkoosh">Let's&nbsp;connect!</a>
+    </div>
+    <nav>
+      <div class="logo">
+        <a href="https://aarkoosh.github.io"><img src="images/logo.svg" alt="logo"></a>
       </div>
-      <nav>
-        <div class="nav-logo-container">
-          <a class="nav-logo-a" href="https://aarkoosh.github.io">
-            <img src="images/logo.svg" alt="logo">
-          </a>
-        </div>
-        <div class="nav-menu-container">
-          <button class="nav-button-desktop-circle">
-            <a class="nav-a-decoration-none" href="https://www.linkedin.com/in/aarkoosh"
-              target="_blank">linkedin.com/in/aarkoosh</i></a>
-          </button>
-          <button class="nav-button-mobile-circle">
-            <a class="nav-a-decoration-none" href="https://www.linkedin.com/in/aarkoosh"
-              target="_blank">LinkedIn</i></a>
-          </button>
-          <button class="nav-button-desktop-circle">
-            <a class="nav-a-decoration-none" href="mailto:aarkoosh@gmail.com"></i>aarkoosh@gmail.com</a>
-          </button>
-          <button class="nav-button-mobile-circle">
-            <a class="nav-a-decoration-none" href="mailto:aarkoosh@gmail.com"></i>Email</a>
-          </button>
-        </div>
-      </nav>
-    </div>
-    <div class="hero-text-block-container">
-      <p class="text-block-p-xs"><span style="color:var(--color-blue)">DIGITAL&nbsp;PRODUCT&nbsp;DESIGN</span></p>
-      <p class="text-block-p-l">A multidisciplinary designer/director helping Fortune ranked companies exceed
-        their goals.</p>
-    </div>
+      <div class="menu">
+        <button class="nav-button-desktop"><a href="https://www.linkedin.com/in/aarkoosh" target="_blank">linkedin.com/in/aarkoosh</a></button>
+        <button class="nav-button-mobile"><a href="https://www.linkedin.com/in/aarkoosh" target="_blank">LinkedIn</a></button>
+        <button class="nav-button-desktop"><a href="mailto:aarkoosh@gmail.com" target="_blank">aarkoosh@gmail.com</a></button>
+        <button class="nav-button-mobile"><a href="mailto:aarkoosh@gmail.com" target="_blank">Email</a></button>
+      </div>
+    </nav>
   </header>
-  <div class="gallery">
-    <div class="gallery-article" onclick="document.getElementById('modal1').showModal()">
-      <div class="article-img-container">
-        <img src="images/caesars-7.png" alt="image">
+  <br>
+  <main>
+    <div class="text-container">
+      <br>
+      <p class="p-xs" style="color:var(--color-blue)">DIGITAL&nbsp;PRODUCT&nbsp;DESIGN</p>
+      <br>
+      <p class="p-xl">A multidisciplinary designer/director helping Fortune ranked companies exceed their goals.</p>
+      <br>
+    </div>
+    <br>
+    <div class="gallery-img">
+      <img src="images/logos-1280x720-axa.png" alt="image">
+      <img src="images/logos-1280x720-belk.png" alt="image">
+      <img src="images/logos-1280x720-cb.png" alt="image">
+      <img src="images/logos-1280x720-discord.png" alt="image">
+      <img src="images/logos-1280x720-grubhub.png" alt="image">
+      <img src="images/logos-1280x720-hefty.png" alt="image">
+      <img src="images/logos-1280x720-jcrew.png" alt="image">
+      <img src="images/logos-1280x720-msi.png" alt="image">
+      <img src="images/logos-1280x720-pandora.png" alt="image">
+      <img src="images/logos-1280x720-steelseries.png" alt="image">
+      <img src="images/logos-1280x720-stitchfix.png" alt="image">
+      <img src="images/logos-1280x720-toms.png" alt="image">
+    </div>
+    <br>
+    <div class="gallery">
+      <div class="gallery-article" onclick="document.getElementById('modal1').showModal()">
+        <div class="article-img-container">
+          <img src="images/caesars-7.png" alt="image">
+        </div>
+        <div class="article-title-container">
+          <p class="article-title">Sportsbook App & Software</p>
+          <p class="article-subtitle">Caesars Entertainment</p>
+        </div>
       </div>
-      <div class="article-title-container">
-        <p class="article-title">Sportsbook App & Software</p>
-        <p class="article-subtitle">Caesars Entertainment</p>
+      <div class="gallery-article" onclick="document.getElementById('modal2').showModal()">
+        <div class="article-img-container">
+          <img src="images/steelseries.png" alt="image">
+        </div>
+        <div class="article-title-container">
+          <p class="article-title">Software Platform Launch</p>
+          <p class="article-subtitle">SteelSeries and Discord</p>
+        </div>
+      </div>
+      <div class="gallery-article" onclick="document.getElementById('modal3').showModal()">
+        <div class="article-img-container">
+          <img src="images/jcrew.png" alt="image">
+        </div>
+        <div class="article-title-container">
+          <p class="article-title">eCommerce</p>
+          <p class="article-subtitle">J. Crew, Crate & Barrel, and Sears</p>
+        </div>
+      </div>
+      <div class="gallery-article" onclick="document.getElementById('modal4').showModal()">
+        <div class="article-img-container">
+          <img src="images/stitch-1.png" alt="image">
+        </div>
+        <div class="article-title-container">
+          <p class="article-title">Personalization</p>
+          <p class="article-subtitle">Stitch Fix, CB, and Belk</p>
+        </div>
+      </div>
+      <div class="gallery-article" onclick="document.getElementById('modal5').showModal()">
+        <div class="article-img-container">
+          <img src="images/toms-1.png" alt="image">
+        </div>
+        <div class="article-title-container">
+          <p class="article-title">Corporate Identity</p>
+          <p class="article-subtitle">TOMS</p>
+        </div>
+      </div>
+      <div class="gallery-article" onclick="document.getElementById('modal6').showModal()">
+        <div class="article-img-container">
+          <img src="images/atkins.png" alt="image">
+        </div>
+        <div class="article-title-container">
+          <p class="article-title">Targeted Advertising</p>
+          <p class="article-subtitle">Atkins, Hefty, GHC, and Grubhub</p>
+        </div>
+      </div>
+      <div class="gallery-article" onclick="document.getElementById('modal7').showModal()">
+        <div class="article-img-container">
+          <img src="images/tributetea.png" alt="image">
+        </div>
+        <div class="article-title-container">
+          <p class="article-title">Brand Photography and Web Optimization</p>
+          <p class="article-subtitle">Tribute Tea Company</p>
+        </div>
+      </div>
+      <div class="gallery-article" onclick="document.getElementById('modal8').showModal()">
+        <div class="article-img-container">
+          <img src="images/headquarters.png" alt="image">
+        </div>
+        <div class="article-title-container">
+          <p class="article-title">Rebrand and Rebuild</p>
+          <p class="article-subtitle">Headquarters Beercade</p>
+        </div>
+      </div>
+      <div class="gallery-article" onclick="document.getElementById('modal9').showModal()">
+        <div class="article-img-container">
+          <img src="images/axa.png" alt="image">
+        </div>
+        <div class="article-title-container">
+          <p class="article-title">Advertising</p>
+          <p class="article-subtitle">AXA</p>
+        </div>
       </div>
     </div>
-    <div class="gallery-article" onclick="document.getElementById('modal2').showModal()">
-      <div class="article-img-container">
-        <img src="images/steelseries.png" alt="image">
-      </div>
-      <div class="article-title-container">
-        <p class="article-title">Software Platform Launch</p>
-        <p class="article-subtitle">SteelSeries and Discord</p>
-      </div>
-    </div>
-    <div class="gallery-article" onclick="document.getElementById('modal3').showModal()">
-      <div class="article-img-container">
-        <img src="images/jcrew.png" alt="image">
-      </div>
-      <div class="article-title-container">
-        <p class="article-title">eCommerce</p>
-        <p class="article-subtitle">J. Crew, Crate & Barrel, and Sears</p>
-      </div>
-    </div>
-    <div class="gallery-article" onclick="document.getElementById('modal4').showModal()">
-      <div class="article-img-container">
-        <img src="images/stitch-1.png" alt="image">
-      </div>
-      <div class="article-title-container">
-        <p class="article-title">Personalization</p>
-        <p class="article-subtitle">Stitch Fix, CB, and Belk</p>
-      </div>
-    </div>
-    <div class="gallery-article" onclick="document.getElementById('modal5').showModal()">
-      <div class="article-img-container">
-        <img src="images/toms-1.png" alt="image">
-      </div>
-      <div class="article-title-container">
-        <p class="article-title">Corporate Identity</p>
-        <p class="article-subtitle">TOMS</p>
-      </div>
-    </div>
-    <div class="gallery-article" onclick="document.getElementById('modal6').showModal()">
-      <div class="article-img-container">
-        <img src="images/atkins.png" alt="image">
-      </div>
-      <div class="article-title-container">
-        <p class="article-title">Targetted Advertising</p>
-        <p class="article-subtitle">Atkins, Hefty, GHC, and Grubhub</p>
-      </div>
-    </div>
-    <div class="gallery-article" onclick="document.getElementById('modal7').showModal()">
-      <div class="article-img-container">
-        <img src="images/tributetea.png" alt="image">
-      </div>
-      <div class="article-title-container">
-        <p class="article-title">Brand Photography and Web Optimization</p>
-        <p class="article-subtitle">Tribute Tea Company</p>
-      </div>
-    </div>
-    <div class="gallery-article" onclick="document.getElementById('modal8').showModal()">
-      <div class="article-img-container">
-        <img src="images/headquarters.png" alt="image">
-      </div>
-      <div class="article-title-container">
-        <p class="article-title">Rebrand and Rebuild</p>
-        <p class="article-subtitle">Headquarters Beercade</p>
-      </div>
-    </div>
-    <div class="gallery-article" onclick="document.getElementById('modal9').showModal()">
-      <div class="article-img-container">
-        <img src="images/axa.png" alt="image">
-      </div>
-      <div class="article-title-container">
-        <p class="article-title">Advertising</p>
-        <p class="article-subtitle">AXA</p>
-      </div>
-    </div>
-  </div>
+  </main>
   <dialog id="modal1" class="modal">
     <div class="modal-header">
       <h2 class="modal-title">Caesars Entertainment</h2>
       <button class="modal-close-button" onclick="document.getElementById('modal1').close()">&#10005;</button>
     </div>
     <div class="modal-body">
-      <div class="modal-content">
-        <div class="text-container" style="padding-top: 0;">
-         <p class="text-block-p-xs"><span style="color:var(--color-blue)">SENIOR&nbsp;UX&nbsp;/&nbsp;UI&nbsp;DESIGNER</span></p>
-         <br>
-         <p class="text-block-p-l">Sportsbook and Trading Platform</p>
-         <br>
-         <p>
-            Managed design and UX of the Caesars Sportsbook trading platform. 
-            Conducted user research, UAT, collaborated with cross-functional teams, improved user experience, increased engagement. 
-            Reduced friction points and contributed to a more seamless betting to trading experience. 
-            Introduced new features while maintaining existing apps, updated legacy systems to modern architecture with little down time.
-          </p>
+        <div class="text-container">
+          <p class="p-xs"><span style="color:var(--color-blue)">SENIOR&nbsp;UX&nbsp;/&nbsp;UI&nbsp;DESIGNER</span></p>
+          <br>
+          <p class="p-l">Sportsbook and Trading Platform</p>
+          <br>
         </div>
-        <div class="badge-container" style="padding-top:0">
-          <span class="badge-gold">Product Design Community of Practice and Requirements Area Contributing Member</span>
-          <span class="badge-gold">'Team Player of the Month' Award Recipient</span>
-        </div>
+        <br>
         <div class="slideshow-container" data-slideshow="6">
           <div class="slideshow-img-container">
-            <img class="slideshow-img" src="images/caesars-9.png" alt="image">
-            <div class="slideshow-info-container">
+            <img class="slideshow-img" src="images/caesars-1.png" alt="image">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">1/3</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 6)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 6)">&#10095;</button>
-              <p class="slideshow-p">1/2 Caesars Sportsbook Frontend</p>
+            </div>
+          </div>
+          <div class="slideshow-img-container">
+            <img class="slideshow-img" src="images/caesars-9.png" alt="image">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">2/3 Sportsbook Frontend</p>
+              <button class="slideshow-button-left" onclick="plusDivs(-1, 6)">&#10094;</button>
+              <button class="slideshow-button-right" onclick="plusDivs(+1, 6)">&#10095;</button>
             </div>
           </div>
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/caesars-6.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">3/3 Sportsbook Backend</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 6)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 6)">&#10095;</button>
-              <p class="slideshow-p">2/2 Caesars Sportsbook Backend</p>
             </div>
           </div>
         </div>
         <br>
         <div class="text-container">
+          <br>
+          <p>
+            Managed design and UX of the Caesars Sportsbook trading platform.
+            Conducted user research, UAT, collaborated with cross-functional teams, improved user experience, increased engagement.
+            Reduced friction points and contributed to a more seamless betting to trading experience.
+            Introduced new features while maintaining existing apps, updated legacy systems to modern architecture with little down time.
+          </p>
+        </div>
+        <br>
+        <div class="badge-container">
+          <span class="badge-gold">Product Design Community of Practice and Requirements Area Contributing Member</span>
+          <span class="badge-gold">'Team Player of the Month' Award Recipient</span>
+        </div>
+        <br>
+        <div class="text-container">
           <div class="text-article-container">
             <div class="text-article">
-              <p class="text-p-xl-center">$11.5b</p>
-              <p class="text-p-med-center"><span style="color: #3c78d8">revenue*</span></p>
-              <p class="text-p-sm-center">*in 2023</p>
+              <p class="p-xl" style="text-align: center;">$11.5b</p>
+              <p class="p-m" style="color: #3c78d8; text-align: center;">revenue in 2023</p>
             </div>
-            <hr>
             <div class="text-article">
-              <p class="text-p-xl-center">6.5%</p>
-              <p class="text-p-med-center"><span style="color: #3c78d8">increase*</span></p>
-              <p class="text-p-sm-center">*from 2022</p>
+              <p class="p-xl" style="text-align: center;">6.5%</p>
+              <p class="p-m" style="color: #3c78d8; text-align: center;">increase from 2022</p>
             </div>
           </div>
         </div>
+        <br>
+        <hr>
+        <br>
         <div class="text-container">
-          <p class="text-block-p-l">Fire Bets Revolutionizes Live Betting</p>
           <br>
-          <p>
-            <span style="font-weight: 700">Objective</span>
-            <br>
-            Improve Caesars Sportsbook mobile and desktop customer betting experience. Manage internal trading platform used by sports traders to set up customer facing bet options.'
-            <br>
-          </p>
+          <p class="p-l">Fire Bets Revolutionizes Live Betting</p>
+          <br>
         </div>
+        <br>
         <div class="slideshow-container" data-slideshow="4">
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/caesars.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">1/3</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 4)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 4)">&#10095;</button>
-              <p class="slideshow-p">1/4</p>
-            </div>
-          </div>
-          <div class="slideshow-img-container">
-            <img class="slideshow-img" src="images/caesars-1.png" alt="image">
-            <div class="slideshow-info-container">
-              <button class="slideshow-button-left" onclick="plusDivs(-1, 4)">&#10094;</button>
-              <button class="slideshow-button-right" onclick="plusDivs(+1, 4)">&#10095;</button>
-              <p class="slideshow-p">2/4</p>
             </div>
           </div>
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/caesars-2.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">2/3</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 4)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 4)">&#10095;</button>
-              <p class="slideshow-p">3/4</p>
             </div>
           </div>
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/caesars-8.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">3/3</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 4)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 4)">&#10095;</button>
-              <p class="slideshow-p">4/4</p>
             </div>
           </div>
         </div>
+        <br>
         <div class="text-container">
-          <p>
-            <span style="font-weight: 700">Key Result</span>
-            <br>
-            Improve Caesars Sportsbook mobile and desktop customer betting experience. Manage internal trading platform used by sports traders to set up customer facing bet options.'
-            <br><br>
-            <a href="https://www.oddstrader.com/news/caesars-revolutionizes-live-betting-fire-bets/" style="color: var(--color-blue)" target="_blank">https://www.oddstrader.com/news/caesars-revolutionizes-live-betting-fire-bets/</a>
-          </p>
+          <br>
+          <p style="font-weight: 700">Objective</p>
+          <br>
+          <p>Improve Caesars Sportsbook mobile and desktop customer betting experience. Manage internal trading platform used by sports traders to set up customer facing bet options.</p>
+          <br>
+          <p style="font-weight: 700">Key Results</p>
+          <br>
+          <p>Improve Caesars Sportsbook mobile and desktop customer betting experience. Manage internal trading platform used by sports traders to set up customer facing bet options.'</p>
+          <br>
+          <a href="https://www.oddstrader.com/news/caesars-revolutionizes-live-betting-fire-bets/" style="color: var(--color-blue)" target="_blank">https://www.oddstrader.com/news/caesars-revolutionizes-live-betting-fire-bets/</a>
         </div>
-        <div class="badge-container" style="padding-top: 0rem; padding-bottom: 1rem;">
-          <span class="badge">Material Design</span>
-          <span class="badge">ANT Design</span>
-          <span class="badge">Backend Systems</span>
-          <span class="badge">Automation</span>
-          <span class="badge">Figma</span>
-          <span class="badge">Jira</span>
-          <span class="badge">Project Management</span>
-          <span class="badge">Automation</span>
+        <br>
+        <div class="badge-container">
+          <span class="badge">Material Design</span><span class="badge">ANT Design</span>
+          <span class="badge">Backend Systems</span><span class="badge">Automation</span>
+          <span class="badge">Figma</span><span class="badge">Jira</span>
+          <span class="badge">Project Management</span><span class="badge">Automation</span>
         </div>
+        <br>
+        <hr>
+        <br>
         <div class="text-container">
-          <p class="text-block-p-l">Dallas Mavericks Companion App</p>
+          <br>
+          <p class="p-l">Dallas Mavericks Companion App</p>
+          <br>
         </div>
+        <br>
         <div class="slideshow-container" data-slideshow="5">
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/caesars-3.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">1/3</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 5)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 5)">&#10095;</button>
-              <p class="slideshow-p">1/3</p>
             </div>
           </div>
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/caesars-4.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">2/3</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 5)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 5)">&#10095;</button>
-              <p class="slideshow-p">2/3</p>
             </div>
           </div>
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/caesars-5.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">3/3</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 5)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 5)">&#10095;</button>
-              <p class="slideshow-p">3/3</p>
             </div>
           </div>
         </div>
+        <br>
+        <div class="text-container">
+          <br>
+          <p style="font-weight: 700">Objective</p>
+          <br>
+          <p>Improve Caesars Sportsbook mobile and desktop customer betting experience. Manage internal trading platform used by sports traders to set up customer facing bet options.</p>
       </div>
+      <br>
+      <div class="badge-container">
+        <span class="badge">Material Design</span><span class="badge">ANT Design</span>
+        <span class="badge">Backend Systems</span><span class="badge">Automation</span>
+        <span class="badge">Figma</span><span class="badge">Jira</span>
+        <span class="badge">Project Management</span><span class="badge">Automation</span>
+      </div>
+      <br>
     </div>
     <div class="modal-footer">
     </div>
@@ -294,140 +319,150 @@
       <button class="modal-close-button" onclick="document.getElementById('modal2').close()">&#10005;</button>
     </div>
     <div class="modal-body">
-      <div class="modal-content">
-        <div class="text-container" style="padding-top: 0;">
-          <p class="text-block-p-xs"><span style="color:var(--color-blue)">PLATFORM&nbsp;DESIGN</span></p>
-          <br>
-          <p class="text-block-p-l">The 'World's Best' High-End Gaming Platform</p>
+      <div class="text-container" style="padding-top: 0;">
+          <p class="p-xs"><span style="color:var(--color-blue)">PLATFORM&nbsp;DESIGN</span></p>
+          <p class="p-l">The 'World's Best' High-End Gaming Platform</p>
         </div>
         <div class="slideshow-container" data-slideshow="1">
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/steelseries-4.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">1/3</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 1)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 1)">&#10095;</button>
-              <p class="slideshow-p">1/3</p>
             </div>
           </div>
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/steelseries-2.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">2/3</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 1)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 1)">&#10095;</button>
-              <p class="slideshow-p">2/3</p>
             </div>
           </div>
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/steelseries-3.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">3/3</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 1)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 1)">&#10095;</button>
-              <p class="slideshow-p">3/3</p>
             </div>
           </div>
         </div>
         <div class="text-container">
           <p>
-            The results of creating a digital platform for SteelSeries cannot be denied. 
-            Supporting up to 6 million monthly active installs in 2021. 
-            Steelseries "GG" platform is the perfect tech companion, converting enthusiasts to hardware owners. 
+            The results of creating a digital platform for SteelSeries cannot be denied.
+            Supporting up to 6 million monthly active installs in 2021.
+            Steelseries "GG" platform is the perfect tech companion, converting enthusiasts to hardware owners.
             In fact around 15% of acquired users converted to buying hardware within 90 days.
           </p>
         </div>
         <div class="text-container">
           <div class="text-article-container">
             <div class="text-article">
-              <p class="text-p-xl-center">6.6</p>
-              <p class="text-p-med-center"><span style="color: #3c78d8">million*</span></p>
-              <p class="text-p-sm-center">*monthly active installs in 2021</p>
+              <p class="p-xl" style="text-align: center; font-weight: 700;">6.6</p>
+              <p class="p-med" style="color: #3c78d8; text-align: center;">million monthly active installs in 2021</p>
             </div>
-            <hr>
             <div class="text-article">
-              <p class="text-p-xl-center">15%</p>
-              <p class="text-p-med-center"><span style="color: #3c78d8">bought hardware*</span></p>
-              <p class="text-p-sm-center">*within 90 days</p>
+              <p class="p-xl" style="text-align: center; font-weight: 700;">650,000</p>
+              <p class="p-med" style="color: #3c78d8; text-align: center;">unique visitors in first month</p>
+            </div>
+            <div class="text-article">
+              <p class="p-xl" style="text-align: center; font-weight: 700;">900,000</p>
+              <p class="p-med" style="color: #3c78d8; text-align: center;">promos claimed</p>
+            </div>
+            <div class="text-article">
+              <p class="p-xl" style="text-align: center; font-weight: 700;">450,000</p>
+              <p class="p-med" style="color: #3c78d8; text-align: center;">avg. ongoing claims for 3 months post launch</p>
+            </div>
+            <div class="text-article">
+              <p class="p-xl" style="text-align: center; font-weight: 700;">15%</p>
+              <p class="p-med" style="color: #3c78d8; text-align: center;">bought hardware within 90 days</p>
             </div>
           </div>
+        </div>
+        <div class="text-container">
+          <p class="p-l">Process</p>
         </div>
         <div class="slideshow-container" data-slideshow="2">
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/steelseries-9.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">1/10 Before | After - app homepage</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 2)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 2)">&#10095;</button>
-              <p class="slideshow-p">1/10  Before | After - app homepage</p>
             </div>
           </div>
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/steelseries-10.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">2/10 Before | After - device manager</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 2)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 2)">&#10095;</button>
-              <p class="slideshow-p">2/10  Before | After - device manager</p>
             </div>
           </div>
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/steelseries-15.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">3/10 Establishing and managing design systems</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 2)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 2)">&#10095;</button>
-              <p class="slideshow-p">3/10  Establishing and managing design systems</p>
             </div>
           </div>
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/steelseries-16.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">4/10 Sketch to interactive prototype</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 2)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 2)">&#10095;</button>
-              <p class="slideshow-p">4/10  Sketch to interactive prototype</p>
             </div>
           </div>
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/steelseries-7.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">5/10 Competitive research</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 2)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 2)">&#10095;</button>
-              <p class="slideshow-p">5/10  Competitive research</p>
             </div>
           </div>
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/steelseries-14.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">6/10 Feedback, reporting, surveys</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 2)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 2)">&#10095;</button>
-              <p class="slideshow-p">6/10  Feedback, reporting, surveys</p>
             </div>
           </div>
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/steelseries-13.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">7/10 User interviews, testing</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 2)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 2)">&#10095;</button>
-              <p class="slideshow-p">7/10  User interviews, testing</p>
             </div>
           </div>
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/steelseries-6.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">8/10 Teamwide initiatives</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 2)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 2)">&#10095;</button>
-              <p class="slideshow-p">8/10  Teamwide initiatives</p>
             </div>
           </div>
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/steelseries-12.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">9/10 Analytics, user research</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 2)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 2)">&#10095;</button>
-              <p class="slideshow-p">9/10  Analytics, user research</p>
             </div>
           </div>
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/steelseries-8.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">10/10 Team planning, product roadmapping</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 2)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 2)">&#10095;</button>
-              <p class="slideshow-p">10/10  Team planning, product roadmapping</p>
             </div>
           </div>
         </div>
@@ -451,75 +486,58 @@
           <span class="badge">Monitoring</span>
         </div>
         <div class="text-container">
-          <p class="text-block-p-xs"><span style="color:var(--color-blue)">STEELSERIES&nbsp;DISCORD&nbsp;COLLABORATION</span></p>
-          <br>
-          <p class="text-block-p-l">Meet Wumpus!</p>
-          <br>
+          <p class="p-xs"><span style="color:var(--color-blue)">STEELSERIES&nbsp;DISCORD&nbsp;COLLABORATION</span></p>
+          <p class="p-l">Meet Wumpus!</p>
         </div>
         <div class="slideshow-container" data-slideshow="3">
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/discord-1.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">1/5</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 3)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 3)">&#10095;</button>
-              <p class="slideshow-p">1/5</p>
             </div>
           </div>
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/discord-2.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">2/5</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 3)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 3)">&#10095;</button>
-              <p class="slideshow-p">2/5</p>
             </div>
           </div>
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/discord-3.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">3/5</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 3)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 3)">&#10095;</button>
-              <p class="slideshow-p">3/5</p>
             </div>
           </div>
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/discord-4.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">4/5</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 3)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 3)">&#10095;</button>
-              <p class="slideshow-p">4/5</p>
             </div>
           </div>
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/discord-5.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">5/5</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 3)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 3)">&#10095;</button>
-              <p class="slideshow-p">5/5</p>
             </div>
           </div>
         </div>
         <div class="text-container">
           <p>
-            900,000+ Nitro claims in the first month of the promotion.
+            900,000+ Nitro claims in the first month of the promotion. 
             650,000+ unique visitors clicking through to Discord, resulting in over 290,000 downloads within the first month.
             Ongoing average weekly requests up to 450,000.
             Objective: promotion partnership between SteelSeries and Discord to drive digital traffic to respective services
           </p>
-        </div>
-        <div class="text-container">
-          <div class="text-article-container-wide">
-            <div class="text-article">
-              <p class="text-p-xl-center">900,000</p>
-              <p class="text-p-med-center"><span style="color: #3c78d8">promos claimed</span></p>
-              <p class="text-p-sm-center">650,000 unique visitors in first month</p>
-            </div>
-            <hr>
-            <div class="text-article">
-              <p class="text-p-xl-center">450,000</p>
-              <p class="text-p-med-center"><span style="color: #3c78d8">avg. ongoing claims*</span></p>
-              <p class="text-p-sm-center">*for 3 months following launch</p>
-            </div>
-          </div>
         </div>
         <div class="badge-container">
           <span class="badge">Product Design</span>
@@ -533,7 +551,6 @@
           <span class="badge">User Analysis</span>
           <span class="badge">Data Analysis</span>
         </div>
-      </div>
     </div>
     <div class="modal-footer">
     </div>
@@ -544,66 +561,63 @@
       <button class="modal-close-button" onclick="document.getElementById('modal3').close()">&#10005;</button>
     </div>
     <div class="modal-body">
-      <div class="modal-content">
         <div class="text-container" style="padding-top: 0;">
-          <p class="text-block-p-xs"><span style="color:var(--color-blue)">&nbsp;PLATFORM&nbsp;DESIGN</span></p>
-          <br>
-          <p class="text-block-p-l">Join a distinguished list</p>
+          <p class="p-xs"><span style="color:var(--color-blue)">&nbsp;PLATFORM&nbsp;DESIGN</span></p>
+          <p class="p-l">Join a distinguished list</p>
         </div>
         <div class="slideshow-container" data-slideshow="7">
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/jcrew.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">1/4 J. Crew</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 7)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 7)">&#10095;</button>
-              <p class="slideshow-p">1/4 J. Crew</p>
             </div>
           </div>
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/jcrew-1.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">2/4 J. Crew</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 7)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 7)">&#10095;</button>
-              <p class="slideshow-p">2/4 J. Crew</p>
             </div>
           </div>
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/jcrew-2.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">3/4 J. Crew</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 7)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 7)">&#10095;</button>
-              <p class="slideshow-p">3/4 J. Crew</p>
             </div>
           </div>
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/jcrew-3.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">4/4 J. Crew</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 7)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 7)">&#10095;</button>
-              <p class="slideshow-p">4/4 J. Crew</p>
             </div>
           </div>
         </div>
         <div class="slideshow-container" data-slideshow="8">
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/crate&barrel.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">1/2 Crate & Barrel</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 8)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 8)">&#10095;</button>
-              <p class="slideshow-p">1/2 Crate & Barrel</p>
             </div>
           </div>
           <div class="slideshow-img-container">
             <img class="slideshow-img" src="images/crate&barrel-1.png" alt="image">
-            <div class="slideshow-info-container">
+            <div class="slideshow-text-container">
+              <p class="slideshow-p">2/2 Crate & Barrel</p>
               <button class="slideshow-button-left" onclick="plusDivs(-1, 8)">&#10094;</button>
               <button class="slideshow-button-right" onclick="plusDivs(+1, 8)">&#10095;</button>
-              <p class="slideshow-p">2/2 Crate & Barrel</p>
             </div>
           </div>
         </div>
         <img src="images/sho.png" class="modal-image" alt="">
-      </div>
     </div>
     <div class="modal-footer">
     </div>
@@ -614,23 +628,21 @@
       <button class="modal-close-button" onclick="document.getElementById('modal4').close()">&#10005;</button>
     </div>
     <div class="modal-body">
-      <div class="modal-content">
-        <p>Stitch Fix</p>
-        <img src="images/stitch-1.png" class="modal-image" alt="">
-        <img src="images/stitch-2.png" class="modal-image" alt="">
-        <img src="images/stitch-3.png" class="modal-image" alt="">
-        <img src="images/stitch-4.png" class="modal-image" alt="">
-        <p>Christopher & Banks</p>
-        <img src="images/cb-1.png" class="modal-image" alt="">
-        <img src="images/cb-2.png" class="modal-image" alt="">
-        <img src="images/cb-3.png" class="modal-image" alt="">
-        <img src="images/cb-4.png" class="modal-image" alt="">
-        <p>Belk</p>
-        <img src="images/belk-1.png" class="modal-image" alt="">
-        <img src="images/belk-2.png" class="modal-image" alt="">
-        <img src="images/belk-3.png" class="modal-image" alt="">
-        <img src="images/belk-4.png" class="modal-image" alt="">
-      </div>
+      <p>Stitch Fix</p>
+      <img src="images/stitch-1.png" class="modal-image" alt="">
+      <img src="images/stitch-2.png" class="modal-image" alt="">
+      <img src="images/stitch-3.png" class="modal-image" alt="">
+      <img src="images/stitch-4.png" class="modal-image" alt="">
+      <p>Christopher & Banks</p>
+      <img src="images/cb-1.png" class="modal-image" alt="">
+      <img src="images/cb-2.png" class="modal-image" alt="">
+      <img src="images/cb-3.png" class="modal-image" alt="">
+      <img src="images/cb-4.png" class="modal-image" alt="">
+      <p>Belk</p>
+      <img src="images/belk-1.png" class="modal-image" alt="">
+      <img src="images/belk-2.png" class="modal-image" alt="">
+      <img src="images/belk-3.png" class="modal-image" alt="">
+      <img src="images/belk-4.png" class="modal-image" alt="">
     </div>
     <div class="modal-footer">
     </div>
@@ -641,50 +653,46 @@
       <button class="modal-close-button" onclick="document.getElementById('modal5').close()">&#10005;</button>
     </div>
     <div class="modal-body">
-      <div class="modal-content">
-        <p>Toms</p>
-        <img src="images/toms-1.png" class="modal-image" alt="">
-        <img src="images/toms-2.png" class="modal-image" alt="">
-        <img src="images/toms-3.png" class="modal-image" alt="">
-        <img src="images/toms-4.png" class="modal-image" alt="">
-        <img src="images/toms-5.png" class="modal-image" alt="">
-        <img src="images/toms-6.png" class="modal-image" alt="">
-        <img src="images/toms-7.png" class="modal-image" alt="">
-        <img src="images/toms-8.png" class="modal-image" alt="">
-      </div>
+      <p>Toms</p>
+      <img src="images/toms-1.png" class="modal-image" alt="">
+      <img src="images/toms-2.png" class="modal-image" alt="">
+      <img src="images/toms-3.png" class="modal-image" alt="">
+      <img src="images/toms-4.png" class="modal-image" alt="">
+      <img src="images/toms-5.png" class="modal-image" alt="">
+      <img src="images/toms-6.png" class="modal-image" alt="">
+      <img src="images/toms-7.png" class="modal-image" alt="">
+      <img src="images/toms-8.png" class="modal-image" alt="">
     </div>
     <div class="modal-footer">
     </div>
   </dialog>
   <dialog id="modal6" class="modal">
     <div class="modal-header">
-      <h2 class="modal-title">Targetted Advertising</h2>
+      <h2 class="modal-title">Targeted Advertising</h2>
       <button class="modal-close-button" onclick="document.getElementById('modal6').close()">&#10005;</button>
     </div>
     <div class="modal-body">
-      <div class="modal-content">
-        <p>Atkins</p>
-        <img src="images/atkins-6.png" class="modal-image" alt="">
-        <img src="images/atkins-7.png" class="modal-image" alt="">
-        <img src="images/atkins-8.png" class="modal-image" alt="">
-        <img src="images/atkins-9.png" class="modal-image" alt="">
-        <img src="images/atkins-10.png" class="modal-image" alt="">
-        <img src="images/atkins-11.png" class="modal-image" alt="">
-        <img src="images/atkins-12.png" class="modal-image" alt="">
-        <img src="images/atkins-13.png" class="modal-image" alt="">
-        <p>Hefty</p>
-        <img src="images/hefty-1.png" class="modal-image" alt="">
-        <img src="images/hefty-2.png" class="modal-image" alt="">
-        <p>GHC</p>
-        <img src="images/cretors-1.png" class="modal-image" alt="">
-        <img src="images/cretors-2.png" class="modal-image" alt="">
-        <img src="images/cretors-3.png" class="modal-image" alt="">
-        <p>Grubhub</p>
-        <img src="images/grubhub.png" class="modal-image" alt="">
-        <img src="images/grubhub-1.png" class="modal-image" alt="">
-        <img src="images/grubhub-2.png" class="modal-image" alt="">
-        <img src="images/grubhub-3.png" class="modal-image" alt="">
-      </div>
+      <p>Atkins</p>
+      <img src="images/atkins-6.png" class="modal-image" alt="">
+      <img src="images/atkins-7.png" class="modal-image" alt="">
+      <img src="images/atkins-8.png" class="modal-image" alt="">
+      <img src="images/atkins-9.png" class="modal-image" alt="">
+      <img src="images/atkins-10.png" class="modal-image" alt="">
+      <img src="images/atkins-11.png" class="modal-image" alt="">
+      <img src="images/atkins-12.png" class="modal-image" alt="">
+      <img src="images/atkins-13.png" class="modal-image" alt="">
+      <p>Hefty</p>
+      <img src="images/hefty-1.png" class="modal-image" alt="">
+      <img src="images/hefty-2.png" class="modal-image" alt="">
+      <p>GHC</p>
+      <img src="images/cretors-1.png" class="modal-image" alt="">
+      <img src="images/cretors-2.png" class="modal-image" alt="">
+      <img src="images/cretors-3.png" class="modal-image" alt="">
+      <p>Grubhub</p>
+      <img src="images/grubhub.png" class="modal-image" alt="">
+      <img src="images/grubhub-1.png" class="modal-image" alt="">
+      <img src="images/grubhub-2.png" class="modal-image" alt="">
+      <img src="images/grubhub-3.png" class="modal-image" alt="">
     </div>
     <div class="modal-footer">
     </div>
@@ -695,14 +703,12 @@
       <button class="modal-close-button" onclick="document.getElementById('modal7').close()">&#10005;</button>
     </div>
     <div class="modal-body">
-      <div class="modal-content">
-        <p>Tribute Tea Company</p>
-        <img src="images/tributetea.png" class="modal-image" alt="">
-        <img src="images/tributetea-1.png" class="modal-image" alt="">
-        <img src="images/tributetea-2.png" class="modal-image" alt="">
-        <img src="images/tributetea-3.png" class="modal-image" alt="">
-        <img src="images/tributetea-4.png" class="modal-image" alt="">
-      </div>
+      <p>Tribute Tea Company</p>
+      <img src="images/tributetea.png" class="modal-image" alt="">
+      <img src="images/tributetea-1.png" class="modal-image" alt="">
+      <img src="images/tributetea-2.png" class="modal-image" alt="">
+      <img src="images/tributetea-3.png" class="modal-image" alt="">
+      <img src="images/tributetea-4.png" class="modal-image" alt="">
     </div>
     <div class="modal-footer">
     </div>
@@ -713,14 +719,12 @@
       <button class="modal-close-button" onclick="document.getElementById('modal8').close()">&#10005;</button>
     </div>
     <div class="modal-body">
-      <div class="modal-content">
-        <p>Headquarters Beercade</p>
-        <img src="images/headquarters.png" class="modal-image" alt="">
-        <img src="images/headquarters-1.png" class="modal-image" alt="">
-        <img src="images/headquarters-2.png" class="modal-image" alt="">
-        <img src="images/headquarters-3.png" class="modal-image" alt="">
-        <img src="images/headquarters-4.png" class="modal-image" alt="">
-      </div>
+      <p>Headquarters Beercade</p>
+      <img src="images/headquarters.png" class="modal-image" alt="">
+      <img src="images/headquarters-1.png" class="modal-image" alt="">
+      <img src="images/headquarters-2.png" class="modal-image" alt="">
+      <img src="images/headquarters-3.png" class="modal-image" alt="">
+      <img src="images/headquarters-4.png" class="modal-image" alt="">
     </div>
     <div class="modal-footer">
     </div>
@@ -731,11 +735,9 @@
       <button class="modal-close-button" onclick="document.getElementById('modal9').close()">&#10005;</button>
     </div>
     <div class="modal-body">
-      <div class="modal-content">
-        <p>AXA</p>
-        <img src="images/axa-2.png" class="modal-image" alt="">
-        <img src="images/axa-1.png" class="modal-image" alt="">
-      </div>
+      <p>AXA</p>
+      <img src="images/axa-2.png" class="modal-image" alt="">
+      <img src="images/axa-1.png" class="modal-image" alt="">
     </div>
     <div class="modal-footer">
     </div>
@@ -794,9 +796,9 @@
     }
 
     // Initialize all slideshows
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       var containers = document.querySelectorAll('[data-slideshow]');
-      containers.forEach(function(container) {
+      containers.forEach(function (container) {
         var slideshowId = container.getAttribute('data-slideshow');
         initSlideshow(slideshowId);
       });
