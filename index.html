@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/d9a2823153.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -39,21 +38,27 @@
       <br>
     </div>
     <br><br><br>
-    <div class="gallery-img">
-      <img src="images/logos-1280x720-axa.png" alt="image">
-      <img src="images/logos-1280x720-belk.png" alt="image">
-      <img src="images/logos-1280x720-cb.png" alt="image">
-      <img src="images/logos-1280x720-discord.png" alt="image">
-      <img src="images/logos-1280x720-grubhub.png" alt="image">
-      <img src="images/logos-1280x720-hefty.png" alt="image">
-      <img src="images/logos-1280x720-jcrew.png" alt="image">
-      <img src="images/logos-1280x720-msi.png" alt="image">
-      <img src="images/logos-1280x720-pandora.png" alt="image">
-      <img src="images/logos-1280x720-steelseries.png" alt="image">
-      <img src="images/logos-1280x720-stitchfix.png" alt="image">
-      <img src="images/logos-1280x720-toms.png" alt="image">
+    <div class="track-gallery-container">
+      <div class="gallery-track">
+        <img src="images/logos-1280x720-axa.png" alt="image">
+        <img src="images/logos-1280x720-belk.png" alt="image">
+        <img src="images/logos-1280x720-cb.png" alt="image">
+        <img src="images/logos-1280x720-discord.png" alt="image">
+        <img src="images/logos-1280x720-grubhub.png" alt="image">
+        <img src="images/logos-1280x720-hefty.png" alt="image">
+      </div>
     </div>
-    <br><br><br>
+    <div class="track-gallery-container">
+      <div class="gallery-track reverse">
+        <img src="images/logos-1280x720-jcrew.png" alt="image">
+        <img src="images/logos-1280x720-msi.png" alt="image">
+        <img src="images/logos-1280x720-pandora.png" alt="image">
+        <img src="images/logos-1280x720-steelseries.png" alt="image">
+        <img src="images/logos-1280x720-stitchfix.png" alt="image">
+        <img src="images/logos-1280x720-toms.png" alt="image">
+      </div>
+    </div>
+    <br><br>
     <div class="gallery">
       <div class="gallery-article" onclick="document.getElementById('modal1').showModal()">
         <div class="article-img-container">
@@ -96,8 +101,8 @@
           <img src="images/toms-1.png" alt="image">
         </div>
         <div class="article-title-container">
-          <p class="article-title">Branding</p>
-          <p class="article-subtitle">TOMS</p>
+          <p class="article-title">Branded Infographics</p>
+          <p class="article-subtitle">FEMA, TOMS</p>
         </div>
       </div>
       <div class="gallery-article" onclick="document.getElementById('modal6').showModal()">
@@ -123,7 +128,7 @@
           <img src="images/headquarters.png" alt="image">
         </div>
         <div class="article-title-container">
-          <p class="article-title">Rebrand and Rebuild</p>
+          <p class="article-title">Redesign</p>
           <p class="article-subtitle">Headquarters Beercade</p>
         </div>
       </div>
@@ -925,10 +930,67 @@
   </dialog>
   <dialog id="modal5" class="modal">
     <div class="modal-header">
-      <h2 class="modal-title">Corporate Identity</h2>
+      <h2 class="modal-title">Branded Infographics</h2>
       <button class="modal-close-button" onclick="document.getElementById('modal5').close()">&#10005;</button>
     </div>
     <div class="modal-body">
+      <div class="text-container">
+        <p class="p-l">FEMA</p>
+        <br>
+      </div>
+      <br>
+      <div class="slideshow-container" data-slideshow="22">
+        <div class="slideshow-img-container">
+          <img class="slideshow-img" src="images/hurricane-1.png" alt="image">
+          <div class="slideshow-text-container">
+            <p class="slideshow-p">FEMA</p>
+            <button class="slideshow-button-left" onclick="plusDivs(-1, 22)">&#10094;</button>
+            <button class="slideshow-button-right" onclick="plusDivs(+1, 22)">&#10095;</button>
+          </div>
+        </div>
+        <div class="slideshow-img-container">
+          <img class="slideshow-img" src="images/hurricane-2.png" alt="image">
+          <div class="slideshow-text-container">
+            <p class="slideshow-p">FEMA</p>
+            <button class="slideshow-button-left" onclick="plusDivs(-1, 22)">&#10094;</button>
+            <button class="slideshow-button-right" onclick="plusDivs(+1, 22)">&#10095;</button>
+          </div>
+        </div>
+        <div class="slideshow-img-container">
+          <img class="slideshow-img" src="images/hurricane-3.png" alt="image">
+          <div class="slideshow-text-container">
+            <p class="slideshow-p">FEMA</p>
+            <button class="slideshow-button-left" onclick="plusDivs(-1, 22)">&#10094;</button>
+            <button class="slideshow-button-right" onclick="plusDivs(+1, 22)">&#10095;</button>
+          </div>
+        </div>
+        <div class="slideshow-img-container">
+          <img class="slideshow-img" src="images/hurricane-4.png" alt="image">
+          <div class="slideshow-text-container">
+            <p class="slideshow-p">FEMA</p>
+            <button class="slideshow-button-left" onclick="plusDivs(-1, 22)">&#10094;</button>
+            <button class="slideshow-button-right" onclick="plusDivs(+1, 22)">&#10095;</button>
+          </div>
+        </div>
+        <div class="slideshow-img-container">
+          <img class="slideshow-img" src="images/hurricane-5.png" alt="image">
+          <div class="slideshow-text-container">
+            <p class="slideshow-p">FEMA</p>
+            <button class="slideshow-button-left" onclick="plusDivs(-1, 22)">&#10094;</button>
+            <button class="slideshow-button-right" onclick="plusDivs(+1, 22)">&#10095;</button>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div class="badge-container">
+        <span class="badge">Material Design</span><span class="badge">ANT Design</span>
+        <span class="badge">Backend Systems</span><span class="badge">Automation</span>
+        <span class="badge">Figma</span><span class="badge">Jira</span>
+        <span class="badge">Project Management</span><span class="badge">Automation</span>
+      </div>
+      <br><br>
+      <hr>
+      <br><br>
       <div class="text-container">
         <p class="p-l">TOMS</p>
         <br>
@@ -1414,26 +1476,39 @@
   </dialog>
   <footer>
     <div class="footer-container">
-      <div>
+      <div style="margin-right: 2rem;">
         <br>
-        <p>Updated&nbsp;2025&nbsp;&copy;&nbsp;<a href="https://aarkoosh.github.io/" class="footer-link" target="_blank" rel="noopener">aarkoosh.github.io</a></p>
+        <a href="https://github.com/" target="_blank" rel="noopener">
+          <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" style="color: var(--color-blue);">
+            <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+          </svg>
+        </a>
+        <br>
+        <p><a href="https://aarkoosh.github.io/" class="footer-link" target="_blank" rel="noopener">aarkoosh.github.io</a>&nbsp;updated&nbsp;2025</p>
         <br>
         <p>
           Created using 
-          <a href="https://code.visualstudio.com/" class="footer-link" target="_blank" rel="noopener">VS Code</a> 
-          and 
+          <a href="https://code.visualstudio.com/" class="footer-link" target="_blank" rel="noopener">VS Code</a>
           <a href="https://github.com/" class="footer-link" target="_blank" rel="noopener">GitHub</a>
+          and
+          <a href="https://github.com/apps/desktop" class="footer-link" target="_blank" rel="noopener">GitHub Desktop</a>
           <br>
         </p>
         <br>
-        <button class="footer-button"><i class="fa-solid fa-user"></i></button>
-        <i class="fa-solid fa-user"></i>
       </div>
       <div>
         <br>
-        <p>&nbsp;Copyright&nbsp;2025</p>
+        <a href="https://github.com/" target="_blank" rel="noopener">
+          <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" style="color: var(--color-blue);">
+            <path d="M245.8 214.9l-33.2 17.3c-9.4-19.6-25.2-19.9-27.5-19.9-22.1 0-33.2 14.6-33.2 43.8 0 23.6 9.2 43.8 33.2 43.8 14.5 0 24.7-7.1 30.6-21.3l30.6 15.5c-6.2 11.5-25.7 39-65.1 39-22.6 0-74-10.3-74-77.1 0-58.7 43-77.1 72.6-77.1 30.7 0 52.7 12 66 35.9zm143.1 0l-32.8 17.3c-9.5-19.8-25.7-19.9-27.9-19.9-22.1 0-33.2 14.6-33.2 43.8 0 23.6 9.2 43.8 33.2 43.8 14.5 0 24.7-7.1 30.5-21.3l31 15.5c-2.1 3.8-21.4 39-65.1 39-22.7 0-74-9.9-74-77.1 0-58.7 43-77.1 72.6-77.1 30.7 0 52.6 12 65.6 35.9zM247.6 8.1C104.7 8.1 0 123.1 0 256.1c0 138.5 113.6 248 247.6 248 129.9 0 248.4-100.9 248.4-248 0-137.9-106.6-248-248.4-248zm.9 450.8c-112.5 0-203.7-93-203.7-202.8 0-105.4 85.4-203.3 203.7-203.3 112.5 0 202.8 89.5 202.8 203.3 0 121.7-99.7 202.8-202.8 202.8z"/>
+          </svg>
+        </a> 
+        <br>
+        <p>All rights reserved.</p>
         <br>
         <a href="https://policies.google.com/privacy?hl=en-US" class="footer-link" target="_blank" rel="noopener">Terms & Privacy</a>
+        <br><br>
+        <p>About</p>
         <br>
       </div>
     </div>
@@ -1485,6 +1560,14 @@
       containers.forEach(function (container) {
         var slideshowId = container.getAttribute('data-slideshow');
         initSlideshow(slideshowId);
+      });
+    });
+
+    // Clone images for infinite scroll on all galleries
+    document.querySelectorAll('.gallery-track').forEach(container => {
+      const images = Array.from(container.children);
+      images.forEach(img => {
+        container.appendChild(img.cloneNode(true));
       });
     });
   </script>
