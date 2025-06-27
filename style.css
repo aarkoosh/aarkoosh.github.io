@@ -13,7 +13,6 @@
   --color-white: #ffffff;
   --color-gradient: -webkit-linear-gradient(to left, #A83279, #D38312);  /* Chrome 10-25, Safari 5.1-6 */
   --color-gradient: linear-gradient(to left, #A83279, #D38312); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
 }
 
 * {
@@ -122,7 +121,7 @@ hr {
   background-color: var(--color-green);
   gap: 1rem;
   padding: 1rem;
-  transition: background-color 7s ease;
+  transition: all 7s ease;
 }
 
 .banner:hover {
