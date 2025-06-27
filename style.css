@@ -10,6 +10,9 @@
   --color-black: #000000;
   --color-black-opacity: rgba(0, 0, 0, 0.6);
   --color-white: #ffffff;
+  --color-gradient: -webkit-linear-gradient(to left, #A83279, #D38312);  /* Chrome 10-25, Safari 5.1-6 */
+  --color-gradient: linear-gradient(to left, #A83279, #D38312); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
 
 * {
@@ -118,6 +121,13 @@ hr {
   background-color: var(--color-green);
   gap: 1rem;
   padding: 1rem;
+  transition: background-color 4s ease-in-out;
+}
+
+.banner:hover {
+  background-color: var(--color-blue);
+  cursor: pointer;
+  color: var(--color-white);
 }
 
 .banner p {
@@ -132,6 +142,10 @@ hr {
 
 .banner a {
   text-decoration: underline;
+}
+
+.banner a:hover {
+  color: var(--color-white);
 }
 
 header {  
@@ -459,11 +473,27 @@ dialog.modal {
   padding: .7rem 1.2rem;
 }
 
-.modal-img {
+.modal-img-container {
+  overflow: hidden;
   margin-left: 5%; 
   margin-right: 5%;
+  padding: 0;
+  height: auto;
+  border: 1px solid var(--color-grey-dark);
+}
+
+.modal-img {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  max-width: 90%;
+  transition: transform 15s ease-in-out;
+  transform-origin: center center;
+  object-fit: cover;
+  display: block;
+}
+
+.modal-img:hover {
+  transform: scale(1.5);
 }
 
 dialog::backdrop {
@@ -550,6 +580,7 @@ body:has(dialog[open]) {
 
 .slideshow-img-container {
   display: none;
+  overflow: hidden;
 }
 
 .slideshow-img {
@@ -558,6 +589,13 @@ body:has(dialog[open]) {
   display: block;
   margin: auto;
   cursor: pointer;
+  transition: transform 5s ease-in-out;
+  transform-origin: center center;
+  object-fit: cover;
+}
+
+.slideshow-img:hover {
+  transform: scale(1.05);
 }
 
 .slideshow-p {
@@ -638,6 +676,11 @@ body:has(dialog[open]) {
 
   .slideshow-container {
     margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .modal-img-container {
+    margin-left: 0%; 
     margin-right: 0%;
   }
 
