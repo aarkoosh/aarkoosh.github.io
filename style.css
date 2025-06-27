@@ -12,15 +12,15 @@
   --color-white: #ffffff;
 }
 
+* {
+  font-family: var(--font-family-main);
+}
+
 body {
   margin: 0;
   padding: 0;
   overscroll-behavior: none;
   overflow-x: hidden;
-}
-
-body:has(dialog[open]) {
-  overflow: hidden;
 }
 
 main {
@@ -39,14 +39,12 @@ video {
 
 p {
   text-decoration: none;
-  font-family: var(--font-family-main);
-  font-weight: 400;
   font-size: 1em;
+  font-weight: 400;
   color: var(--color-black);
   line-height: 1.3em;
   padding: 0;
   margin: 0;
-  text-overflow: ellipsis;
 }
 
 .p-xs {
@@ -82,14 +80,12 @@ p {
 
 a {
   text-decoration: none;
-  font-family: var(--font-family-main);
-  font-weight: 400;
   font-size: 1em;
+  font-weight: 400;
   color: var(--color-black);
   line-height: 1.4em;
   padding: 0;
   margin: 0;
-  text-overflow: ellipsis;
 }
 
 button {
@@ -100,7 +96,6 @@ button {
   background-color: var(--color-white);
   border-radius: var(--border-radius);
   color: var(--color-black);
-  font-family: var(--font-family-main);
   font-weight: 700;
   cursor: pointer;
 }
@@ -116,13 +111,6 @@ hr {
   border: none;
 }
 
-header {
-  position: sticky;
-  width: 100%;
-  z-index: 999;
-  top: 0;
-}
-
 .banner {
   display: flex;
   justify-content: center;
@@ -134,7 +122,6 @@ header {
 
 .banner p {
   overflow: hidden;
-  font-family: var(--font-family-main);
   font-weight: 500;
   font-size: 1rem;
   color: var(--color-black);
@@ -145,6 +132,13 @@ header {
 
 .banner a {
   text-decoration: underline;
+}
+
+header {  
+  position: sticky;
+  width: 100%;
+  z-index: 999;
+  top: 0;
 }
 
 nav {
@@ -160,18 +154,13 @@ nav {
 
 .logo {
   display: flex;
-  width: 150px;
-  min-width: 150px;
-  max-width: 150px;
-}
-
-.logo a {
-  display: contents;
+  width: 9rem;
+  min-width: 9rem;
 }
 
 .menu {
   display: flex;
-  gap: .75rem;
+  gap: .5rem;
   flex-shrink: 1;
   min-width: 0;
 }
@@ -184,45 +173,32 @@ nav {
   text-decoration: none;
 }
 
-.nav-button-desktop {
+.nav-a-desktop {
   border: 1.5px solid var(--color-black);
   border-radius: var(--border-radius);
-  font-family: var(--font-family-main);
   font-size: 1em;
   font-weight: 500;
   background-color: var(--color-white);
+  padding: .5rem 1rem;
+  text-align: center;
 }
 
-.nav-button-desktop:hover,
-.nav-button-mobile:hover {
-  border: 1.5px solid var(--color-blue);
-  background-color: var(--color-blue);
-}
-
-.nav-button-desktop:hover p,
-.nav-button-mobile:hover p,
-.nav-button-desktop:hover a,
-.nav-button-mobile:hover a {
-  color: var(--color-white);
-}
-
-.nav-button-mobile {
+.nav-a-mobile {
   display: none;
   border: 1.5px solid var(--color-black);
   border-radius: var(--border-radius);
-  font-family: var(--font-family-main);
   font-size: 1em;
   font-weight: 500;
   background-color: var(--color-white);
-  ;
+  padding: .5rem 1rem;
+  text-align: center;
 }
 
-.nav-button-desktop,
-.nav-button-mobile {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 300px;
+.nav-a-desktop:hover,
+.nav-a-mobile:hover {
+  border: 1.5px solid var(--color-blue);
+  background-color: var(--color-blue);
+  color: var(--color-white);
 }
 
 footer {
@@ -483,12 +459,11 @@ dialog.modal {
   padding: .7rem 1.2rem;
 }
 
-.modal-image {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  display: block;
+.modal-img {
+  margin-left: 5%; 
+  margin-right: 5%;
   box-sizing: border-box;
+  max-width: 90%;
 }
 
 dialog::backdrop {
@@ -520,7 +495,6 @@ body:has(dialog[open]) {
   padding-right: .5rem;
   padding-top: .3rem;
   padding-bottom: .3rem;
-  font-family: var(--font-family-main);
   font-size: .8em;
   font-weight: 500;
   text-align: center;
@@ -540,7 +514,6 @@ body:has(dialog[open]) {
   padding-right: .5rem;
   padding-top: .3rem;
   padding-bottom: .3rem;
-  font-family: var(--font-family-main);
   font-size: .8em;
   font-weight: 500;
   text-align: center;
@@ -584,6 +557,7 @@ body:has(dialog[open]) {
   height: auto;
   display: block;
   margin: auto;
+  cursor: pointer;
 }
 
 .slideshow-p {
@@ -623,20 +597,12 @@ body:has(dialog[open]) {
     grid-template-columns: 1fr 1fr;
   }
 
-  .nav-button-desktop {
-    display: none;
-  }
-
-  .nav-button-mobile {
-    display: block;
-  }
-
   .text-article-container {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 850px) {
   main {
     padding-left: 5%;
     padding-right: 5%;
@@ -644,6 +610,14 @@ body:has(dialog[open]) {
 
   nav {
     padding: .5rem 5%;
+  }
+
+  .nav-a-desktop {
+    display: none;
+  }
+
+  .nav-a-mobile {
+    display: block;
   }
 
   .gallery {
