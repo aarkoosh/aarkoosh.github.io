@@ -122,7 +122,7 @@ hr {
   background-color: var(--color-green);
   gap: 1rem;
   padding: 1rem;
-  transition: background-color 7s ease;
+  transition: all 7s ease;
 }
 
 .banner:hover {
