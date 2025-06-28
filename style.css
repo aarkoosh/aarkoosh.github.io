@@ -358,7 +358,7 @@ dialog.modal {
   overflow: hidden;
   width: 100%;
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: .7rem;
 }
 
 .track-gallery-container::before,
@@ -385,21 +385,23 @@ dialog.modal {
 .gallery-track {
   display: flex;
   width: fit-content;
-  animation: scroll-left 10s linear infinite;
+  animation: scroll-left 20s linear infinite;
 }
 
-.gallery-track.reverse {
-  animation: scroll-right 10s linear infinite;
+.gallery-track-reverse {
+  display: flex;
+  width: fit-content;
+  animation: scroll-right 20s linear infinite;
 }
 
-.gallery-track img {
-  height: 6rem;
-  object-fit: cover;
-  flex-shrink: 0;
+.track-item {
+  width: 10rem;
+  margin: 1.1rem 3rem;
+}
+
+.gallery-track img,
+.gallery-track-reverse img {
   opacity: 0.6;
-  margin-right: 3.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 @keyframes scroll-left {
@@ -408,13 +410,13 @@ dialog.modal {
   }
 
   100% {
-    transform: translateX(-25%);
+    transform: translateX(-50%);
   }
 }
 
 @keyframes scroll-right {
   0% {
-    transform: translateX(-25%);
+    transform: translateX(-50%);
   }
 
   100% {
