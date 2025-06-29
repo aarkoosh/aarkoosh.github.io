@@ -385,13 +385,13 @@ dialog.modal {
 .gallery-track {
   display: flex;
   width: fit-content;
-  animation: scroll 20s linear infinite;
+  animation: scroll 30s linear infinite;
 }
 
 .gallery-track-reverse {
   display: flex;
   width: fit-content;
-  animation: scroll 20s linear infinite reverse;
+  animation: scroll 30s linear infinite reverse;
   transform: translateX(-50%);
 }
 
