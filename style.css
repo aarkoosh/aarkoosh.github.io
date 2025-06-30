@@ -119,28 +119,12 @@ hr {
   justify-content: center;
   align-items: center;
   background-color: var(--color-green);
-  gap: 1rem;
   padding: 1rem;
-  transition: all 7s ease;
+  transition: background-color 7s ease;
 }
 
 .banner:hover {
   background-color: var(--color-blue-light);
-  color: var(--color-white);
-}
-
-.banner p {
-  overflow: hidden;
-  font-weight: 500;
-  font-size: 1rem;
-  color: var(--color-black);
-  line-height: 1.2em;
-  padding: 0;
-  margin: 0;
-}
-
-.banner a {
-  text-decoration: underline;
 }
 
 header {  
@@ -268,6 +252,12 @@ footer {
 .text-article-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.text-article-container-3fr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 2rem 0rem;
 }
 
 .text-article {
@@ -624,6 +614,14 @@ body:has(dialog[open]) {
   .text-article-container {
     grid-template-columns: 1fr 1fr;
   }
+
+  .text-article-container-3fr {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .p-xxl {
+    font-size: 3.5em;
+  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -652,11 +650,11 @@ body:has(dialog[open]) {
     width: 90%;
   }
 
-  .banner p {
-    display: none;
+  .text-article-container {
+    grid-template-columns: 1fr;
   }
 
-  .text-article-container {
+  .text-article-container-3fr {
     grid-template-columns: 1fr;
   }
 
