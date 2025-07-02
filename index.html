@@ -136,19 +136,8 @@
     <div class="modal-body">
       <div class="text-container">
         <p class="p-l">Caesars Sportsbook</p>
-      </div>
-      <br><br>
-      <div class="badge-container">
-        <span class="badge-gold">Product&nbsp;Design</span>
-        <span class="badge-gold">User&nbsp;Experience</span>
-        <span class="badge-gold">Front-End&nbsp;Development</span>
-        <span class="badge-gold">Project&nbsp;Leadership</span>
-        <span class="badge-gold">Product&nbsp;Management</span>
-        <span class="badge-gold">Project&nbsp;Management</span>
-        <span class="badge-gold">Community&nbsp;of&nbsp;Practice&nbsp;(COP)&nbsp;Member</span>
-        <span class="badge-gold">Requirements&nbsp;Area&nbsp;(RA)&nbsp;Member</span>
-        <span class="badge-gold">'Team&nbsp;Player&nbsp;of&nbsp;the&nbsp;Month'&nbsp;Award&nbsp;Recipient</span>
-        <span class="badge-gold">Federally&nbsp;Licensed</span>
+        <br>
+        <p>Product Design and UX for the Caesars Sportsbook Betting and Trading Platform.</p>
       </div>
       <br><br>
       <div class="slideshow-container" data-slideshow="6">
@@ -196,8 +185,18 @@
       <br><br>
       <div class="text-container">
         <p style="font-weight: 700">Role</p>
-        <br>
-        <p>Manages Product Design and UX of the Caesars Sportsbook Trading Platform.</p>
+      </div>
+      <br>
+      <div class="badge-container">
+        <span class="badge-gold">Product&nbsp;Design</span>
+        <span class="badge-gold">User&nbsp;Experience</span>
+        <span class="badge-gold">Front-End&nbsp;Development</span>
+        <span class="badge-gold">Project&nbsp;Leadership</span>
+        <span class="badge-gold">Product&nbsp;Management</span>
+        <span class="badge-gold">Project&nbsp;Management</span>
+        <span class="badge-gold">Community&nbsp;of&nbsp;Practice&nbsp;(COP)&nbsp;Member</span>
+        <span class="badge-gold">Requirements&nbsp;Area&nbsp;(RA)&nbsp;Member</span>
+        <span class="badge-gold">'Team&nbsp;Player&nbsp;of&nbsp;the&nbsp;Month'&nbsp;Award&nbsp;Recipient</span>
       </div>
       <br><br>
       <div class="text-container">
@@ -286,7 +285,7 @@
       <div class="text-container">
         <p style="font-weight: 700">Key Results</p>
         <br>
-        <p>Conducted user research and UAT to identify pain points, reduce friction, and improve engagement. Introduced new features, maintained existing apps, and modernized legacy systems with minimal downtime.</p>       
+        <p>Conducted ongoing research and testing to identify key pain points, reduce that friction, and improve engagement. Introduced new features, maintained existing products, and modernized legacy systems with little-to-no downtime.</p>       
       </div>
       <div class="text-container">
         <div class="text-article-container">
@@ -1666,41 +1665,6 @@
         initSlideshow(slideshowId);
       });
     });
-
-    /*Infinite Scroll*/
-    function initGallery() {
-        const galleries = document.querySelectorAll('.gallery-track, .gallery-track-reverse');
-        
-        galleries.forEach(track => {
-            const images = track.querySelectorAll('img');
-            let loadedCount = 0;
-            
-            function onTrackReady() {
-                const originalItems = Array.from(track.children);
-                originalItems.forEach(item => {
-                    track.appendChild(item.cloneNode(true));
-                });
-            }
-            
-            images.forEach(img => {
-                if (img.complete) {
-                    loadedCount++;
-                } else {
-                    img.addEventListener('load', () => {
-                        loadedCount++;
-                        if (loadedCount === images.length) {
-                            onTrackReady();
-                        }
-                    });
-                }
-            });
-            
-            if (loadedCount === images.length) {
-                onTrackReady();
-            }
-        });
-    }
-    document.addEventListener('DOMContentLoaded', initGallery);
   </script>
 </body>
 
