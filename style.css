@@ -116,6 +116,7 @@ hr {
 
 .banner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: var(--color-green);
@@ -665,12 +666,6 @@ body:has(dialog[open]) {
   .modal-img-container {
     margin-left: 0%; 
     margin-right: 0%;
-  }
-
-  .modal-header,
-  .modal-footer {
-    padding-left: 1.5rem;
-    padding-right: 1rem;
   }
 
   .modal-body {
