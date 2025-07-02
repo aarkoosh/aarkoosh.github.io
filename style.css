@@ -377,13 +377,13 @@ dialog.modal {
 .gallery-track {
   display: flex;
   width: fit-content;
-  animation: bounce 20s linear infinite alternate;
+  animation: bounce 25s linear infinite alternate;
 }
 
 .gallery-track-reverse {
   display: flex;
   width: fit-content;
-  animation: bounce 20s linear infinite alternate-reverse;
+  animation: bounce 25s linear infinite alternate-reverse;
 }
 
 .track-item {
