@@ -204,7 +204,6 @@ footer {
   background-color: var(--color-grey-light);
   width: 100%;
   bottom: 0;
-  overflow: hidden;
 }
 
 .footer-container {
@@ -216,6 +215,7 @@ footer {
   padding-left: 10%;
   padding-right: 10%;
   margin-top: 3rem;
+  overflow: hidden;
 }
 
 .footer-link {
@@ -276,6 +276,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
+  margin-bottom: 6rem;
 }
 
 .gallery-article {
@@ -293,6 +294,7 @@ footer {
   background-color: var(--color-grey-light);
   border: 1.5px solid var(--color-grey-dark);
   border-radius: 5px;
+  color: var(--color-blue);
 }
 
 .article-title-container {
@@ -305,16 +307,6 @@ footer {
   line-height: 1.2em;
   font-weight: 600;
   margin-top: 1rem;
-  padding-left: .5rem;
-}
-
-.article-subtitle {
-  font-size: .75em;
-  line-height: 1.2em;
-  font-weight: 500;
-  color: var(--color-black);
-  margin-top: .5rem;
-  margin-bottom: 1rem;
   padding-left: .5rem;
 }
 
@@ -433,7 +425,6 @@ dialog.modal {
 .modal-body {
   flex: 1;
   overflow-y: auto;
-  padding-top: .15rem;
   padding-left: 3.25rem;
   padding-right: 3.25rem;
 }
@@ -453,7 +444,8 @@ dialog.modal {
   background-color: var(--color-white);
   color: var(--color-black);
   cursor: pointer;
-  padding: .7rem 1.2rem;
+  padding: .5rem .7rem;
+  font-size: 1.3em;
 }
 
 .modal-img-container {
@@ -633,7 +625,7 @@ body:has(dialog[open]) {
   }
 
   nav {
-    padding: .5rem 5%;
+    padding: .6rem 5%;
   }
 
   .nav-a-desktop {
