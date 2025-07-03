@@ -372,13 +372,13 @@ dialog.modal {
 .gallery-track {
   display: flex;
   width: fit-content;
-  animation: track-left 30s linear infinite alternate;
+  animation: track-left 40s linear infinite alternate;
 }
 
 .gallery-track-reverse {
   display: flex;
   width: fit-content;
-  animation: track-right 30s linear infinite alternate;
+  animation: track-right 40s linear infinite alternate;
 }
 
 .track-item {
