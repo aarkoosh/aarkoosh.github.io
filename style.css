@@ -294,7 +294,6 @@ footer {
   background-color: var(--color-grey-light);
   border: 1.5px solid var(--color-grey-dark);
   border-radius: 5px;
-  color: var(--color-blue);
 }
 
 .article-title-container {
