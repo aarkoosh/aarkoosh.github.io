@@ -1,6 +1,6 @@
 :root {
-  --font-family-main: "Pathway Extreme";
-  --font-family-logo: 'Rock Salt';
+  --font-family-main: "Pathway Extreme", sans-serif;
+  --font-family-logo: 'Caveat', sans-serif;
   --border-radius: 100px;
   --color-blue: #4384ed;
   --color-blue-light: #5db1ff;
@@ -156,7 +156,7 @@ nav:hover {
 
 .logo {
   font-family: var(--font-family-logo);
-  font-size: 1.1em;
+  font-size: 2.1em;
   display: flex;
 }
 
