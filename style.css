@@ -1,7 +1,6 @@
 :root {
   --font-family-main: "Pathway Extreme";
   --font-family-logo: 'Gloria Hallelujah';
-  --border-radius: 100px;
   --color-blue: #4384ed;
   --color-blue-light: #5db1ff;
   --color-green: #31f5a5;
@@ -11,6 +10,7 @@
   --color-grey-dark: #eeeeee;
   --color-black: #000000;
   --color-white: #ffffff;
+  --radius: 10px;
 }
 
 * {
@@ -25,14 +25,10 @@ body {
 }
 
 main {
-  padding-left: 12%;
-  padding-right: 12%;
+  padding: 2rem 12% 2.5rem;
 }
 
-img,
-embed,
-object,
-video {
+img {
   max-width: 100%;
   padding: 0;
   margin: 0;
@@ -89,27 +85,15 @@ a {
   margin: 0;
 }
 
-button {
-  border: none;
-  text-align: center;
-  padding: .5rem 1rem;
-  font-size: 1.5em;
-  background-color: var(--color-white);
-  border-radius: var(--border-radius);
-  color: var(--color-black);
-  font-weight: 700;
-  cursor: pointer;
-}
-
-button:focus {
-  outline: none;
-  box-shadow: none;
-}
-
 hr {
   background-color: var(--color-grey-dark);
   height: 1px;
   border: none;
+}
+
+main > hr {
+  width: 100%;
+  margin: 3rem 0;
 }
 
 .banner {
@@ -127,7 +111,7 @@ hr {
   background-color: var(--color-blue-light);
 }
 
-header {  
+header {
   position: sticky;
   width: 100%;
   z-index: 999;
@@ -167,12 +151,16 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   padding-left: 10%;
   padding-right: 10%;
   margin-top: 3rem;
   overflow: hidden;
+}
+
+.footer-container p + p {
+  margin-top: 1.25rem;
 }
 
 .footer-link {
@@ -203,7 +191,33 @@ footer {
   display: flex;
   flex: 1 1 100%;
   flex-direction: column;
-  gap: 0;
+  gap: 1.25rem;
+}
+
+.text-container:has(> .case-img-grid) {
+  gap: 1rem;
+}
+
+main > .text-container + .track-gallery-container {
+  margin-top: 2.5rem;
+}
+
+.track-gallery-container + section {
+  margin-top: 2.5rem;
+}
+
+main > section + section {
+  margin-top: 5rem;
+}
+
+.text-container + .text-container,
+.text-container + .accordion {
+  margin-top: 2rem;
+}
+
+.text-container + .case-img-container,
+.text-container + .case-img-grid {
+  margin-top: 1rem;
 }
 
 .text-container a:hover {
@@ -213,20 +227,21 @@ footer {
 .text-article-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-
-.text-article-container-3fr {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 2rem 0rem;
+  gap: 1rem;
 }
 
 .text-article {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 4rem 1.5rem;
+  background-color: var(--color-grey-light);
+  border-radius: var(--radius);
+}
+
+.text-article .p-m + .p-xs,
+.text-article .p-m + .p-s {
+  margin-top: 1rem;
 }
 
 .track-gallery-container {
@@ -299,151 +314,6 @@ footer {
   100% { transform: translateX(0); }
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
-  margin-bottom: 6rem;
-}
-
-.gallery-article {
-  cursor: pointer;
-  box-sizing: border-box;
-  border: 1.5px solid var(--color-white);
-  overflow: hidden;
-  background-color: var(--color-white);
-  border-radius: 0;
-  padding-bottom: 1rem;
-  transition: border-radius 1s ease-in-out, border-color 1s ease-in-out, background-color 1s ease-in-out;
-}
-
-.gallery-article img {
-  cursor: pointer;
-}
-
-.gallery-article .article-title-container,
-.gallery-article .article-title {
-  cursor: pointer;
-}
-
-.gallery-article:hover {
-  background-color: var(--color-grey-light);
-  border: 1.5px solid var(--color-grey-dark);
-  border-radius: 5px;
-}
-
-.article-title-container {
-  width: 100%;
-  padding-left: .5rem;
-}
-
-.article-title {
-  font-size: 1em;
-  line-height: 1.2em;
-  font-weight: 600;
-  margin-top: 1rem;
-  padding-left: .5rem;
-}
-
-.article-img-container {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-
-.gallery-article img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-dialog.modal {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  max-width: 1200px;
-  height: 80vh;
-  margin: auto;
-  border: none;
-  padding: 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  border-radius: 3px;
-}
-
-.modal-header,
-.modal-footer {
-  background: white;
-  padding: .5rem 1rem;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: sticky;
-  z-index: 1;
-}
-
-.modal-header {
-  top: 0;
-  justify-content: flex-end;
-}
-
-.modal-footer {
-  bottom: 0;
-  min-height: 3rem;
-  justify-content: flex-end;
-}
-
-.modal-body {
-  flex: 1;
-  overflow-y: auto;
-  scrollbar-gutter: stable;
-  padding-left: 3.25rem;
-  padding-right: 3.25rem;
-}
-
-.modal-close-button {
-  border: 1px solid var(--color-white);
-  background-color: var(--color-white);
-  color: var(--color-black);
-  cursor: pointer;
-  padding: .5rem .7rem;
-  font-size: 1.3em;
-}
-
-.modal-img-container {
-  overflow: hidden;
-  position: relative;
-  aspect-ratio: 16 / 9;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding: 0;
-  border: 1px solid var(--color-grey-dark);
-}
-
-.modal-img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  object-fit: contain;
-  display: block;
-}
-
-dialog::backdrop {
-  background: rgba(0, 0, 0, 0.85);
-}
-
-dialog.modal:not([open]) {
-  display: none;
-}
-
-body:has(dialog[open]) {
-  overflow: hidden;
-}
-
 .badge-container {
   display: flex;
   flex-wrap: wrap;
@@ -455,6 +325,9 @@ body:has(dialog[open]) {
 
 .badge-blue {
   box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
   background-color: var(--color-grey-light);
   color: var(--color-black);
   padding: .4rem .5rem;
@@ -467,6 +340,25 @@ body:has(dialog[open]) {
   white-space: nowrap;
   max-width: 100%;
   user-select: none;
+}
+
+.badge-blue .material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.35em;
+  line-height: 1;
+  width: 1em;
+  height: 1em;
+  margin-block: -0.15em;
+  letter-spacing: normal;
+  color: var(--color-grey);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  overflow: visible;
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 20;
 }
 
 .badge-gold {
@@ -485,14 +377,94 @@ body:has(dialog[open]) {
   user-select: none;
 }
 
+.accordion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.accordion > hr {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  flex-shrink: 0;
+}
+
+.accordion-item {
+  background: none;
+}
+
+.accordion-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+}
+
+.accordion-item summary::-webkit-details-marker,
+.accordion-item summary::marker {
+  content: "";
+  display: none;
+}
+
+.accordion-icon {
+  font-family: "Material Symbols Outlined";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  width: 24px;
+  height: 24px;
+  color: var(--color-black);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  user-select: none;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.accordion-icon-up,
+.accordion-item[open] .accordion-icon-down {
+  display: none;
+}
+
+.accordion-item[open] .accordion-icon-up {
+  display: inline-flex;
+}
+
+.accordion-panel {
+  padding: 0 0 1rem;
+}
+
+.accordion-panel .case-img-container {
+  margin-bottom: 0;
+}
+
+.case-img-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.case-img-grid .case-img-container {
+  margin-bottom: 0;
+}
+
 .case-img-container {
   display: block;
   overflow: hidden;
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   border: 1px solid var(--color-grey-dark);
+  border-radius: var(--radius);
 }
 
 .case-caption-container {
@@ -501,7 +473,6 @@ body:has(dialog[open]) {
   bottom: 0px;
   width: 100%;
   overflow: hidden;
-  overflow: ellipsis;
 }
 
 .case-img {
@@ -522,96 +493,24 @@ body:has(dialog[open]) {
   overflow: hidden;
 }
 
-.modal .slideshow-container {
-  position: relative;
-  user-select: none;
-  border: 1px solid var(--color-grey-dark);
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.modal .slideshow-img-container {
-  display: none;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-}
-
-.modal .slideshow-text-container {
-  display: flex;
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  overflow: hidden;
-  overflow: ellipsis;
-}
-
-.modal .slideshow-img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  cursor: pointer;
-  object-fit: contain;
-}
-
-.modal .slideshow-p {
-  padding: .5rem 1rem;
-  font-size: 1em;
-  color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.6);
-  flex-grow: 1;
-  overflow: hidden;
-}
-
-.slideshow-button-left,
-.slideshow-button-right {
-  border-radius: 0;
-  padding: .5rem 1rem;
-  color: var(--color-white);
-  background-color: rgba(0, 0, 0, 0.6);
-  font-size: 1em;
-  border-left: 1px solid var(--color-grey-light);
-  cursor: pointer;
-}
-
-.slideshow-button-left:hover,
-.slideshow-button-right:hover {
-  background-color: var(--color-black);
-}
-
 @media (min-width: 1900px) {
   main {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 20%;
+    padding-right: 20%;
   }
 
   nav {
-    padding: .6rem 15%;
+    padding: .6rem 20%;
   }
 }
 
 @media only screen and (max-width: 1400px) {
-  .gallery {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .text-article-container {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .text-article-container-3fr {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
   .p-xxl {
     font-size: 3.5em;
   }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 700px) {
   main {
     padding-left: 5%;
     padding-right: 5%;
@@ -621,25 +520,9 @@ body:has(dialog[open]) {
     padding: .6rem 5%;
   }
 
-  .gallery {
+  .text-article-container,
+  .case-img-grid {
     grid-template-columns: 1fr;
-  }
-
-  dialog.modal {
-    width: 90%;
-  }
-
-  .text-article-container {
-    grid-template-columns: 1fr;
-  }
-
-  .text-article-container-3fr {
-    grid-template-columns: 1fr;
-  }
-
-  .modal-body {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
   }
 
   .p-xl {
@@ -648,25 +531,12 @@ body:has(dialog[open]) {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .case-img,
-  .modal .slideshow-img,
-  .modal .modal-img {
+  .case-img {
     transition: scale 10s ease-in-out;
     scale: 1;
   }
 
-  .case-img-container:hover .case-img,
-  .modal .slideshow-img-container:hover .slideshow-img,
-  .modal .modal-img-container:hover .modal-img {
-    scale: 1.08;
-  }
-
-  .gallery-article .article-img-container img {
-    transition: scale 10s ease-in-out;
-    scale: 1;
-  }
-
-  .gallery-article:hover .article-img-container img {
+  .case-img-container:hover .case-img {
     scale: 1.08;
   }
 }
